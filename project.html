@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Тестовые задание</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="main-container">
+	<div id="checklist">
+		<input type="radio" id= "plan1" name="radio" value="1"> <label for="plan1">LICENSE PLAN#1 <span> $13 per license </span></label> <p> <br>
+    	<input type="radio" id= "plan2" name="radio" value="2"> <label for="plan2">LICENSE PLAN#2 <span> $22 per license </span></label> <p> <br>
+    	<input type="radio" id= "plan3" name="radio" value="3"> <label for="plan3">LICENSE PLAN#3 <span> $34 per license </span></label> <p> <br>
+	</div>
+	<div id="number"> Number of license 
+		<select name="col" id="select">
+		<option name="col" value=”1”>1</option>
+		<option name="col" value=”10”>10</option>
+		<option name="col" value=”100”>100</option>
+		</select>
+	</div>
+	<div id="cost" align="center">
+		
+		<span>Total:</span> <span id="js-result"></span>
+		<p><button>BUY NOW</button> 
+		<div class="block-text" id="block-1">Selected plan: #1</div>
+ 		<div class="block-text" id="block-2">Selected plan: #2</div>
+ 		<div class="block-text" id="block-3">Selected plan: #3</div>
+	</div>
+</div>
+
+<script>
+	$('input[name="radio"]').click(function(){
+	var target = $('#block-' + $(this).val());
+
+	$('.block-text').not(target).hide(0);
+	target.fadeIn(100);
+});
+</script>
+
+<script>
+	$('select[name="col"]').click(function(){
+	var value = $('#select').val();
+	$('#js-result').html(value);
+});
+
+// У меня, к сожалению, не получилось связать value select и value radio.
+// Но я в любом случае разберусь с этим, потому что мне очень интересно самому.
+// Но я не хочу проваливать дедлайн, который сам установил, поэтому сдаю проект на данном этапе.
+// Тем не менее спасибо за уделенное внимание и предоставленную возможность. Буду ждать обратной связи.
+</script>
+
+</body>
+</html>

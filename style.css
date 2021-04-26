@@ -1,0 +1,104 @@
+@font-face { 
+    font-family: "BebasRegular";
+    src: url("project/fonts/BebasRegular/BebasRegular.eot");
+    src: url("project/fonts/BebasRegular/BebasRegular.eot?#iefix")format("embedded-opentype"),
+    url("project/fonts/BebasRegular/BebasRegular.woff") format("woff"),
+    url("project/fonts/BebasRegular/BebasRegular.ttf") format("truetype");
+    font-style: bold;
+    font-weight: normal;
+}
+
+#main-container {
+	position: relative;
+	top: 150px;
+	left: 150px;
+	background: #FAFAFA;
+	border: 10px solid #F0F0F0;
+	height: 460px;
+	width: 445px;
+}
+
+#checklist {
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	width: 440px;
+	height: 190px;
+}
+#checklist span{
+	position: absolute; 
+	right: 0px;
+}
+#checklist input{
+	display: none;
+}
+
+#number {
+	position: absolute;
+	top: 190px;
+	width: 215px;
+	height: 15px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	margin-left: 15px;
+	padding: 30px 100px;
+	font-size: 12px;
+}
+
+#cost {
+	position: absolute;
+	top: 295px;
+	left: 150px;
+}
+
+label{
+	position: relative;
+	padding: 8px 285px 8px 40px;
+	background-image: url('project/active.png');
+	background-repeat: no-repeat;
+	width: 415px;
+	height: 55px;
+	font-family: "BebasRegular";
+	font-size: 20px;
+}
+
+label:hover{
+	 border: 1px solid rgb(135, 206, 235, 0.5);
+	 cursor: pointer;
+	 background: rgb(135, 206, 235, 0.2);
+	 background-image: url('project/active.png');
+	 background-repeat: no-repeat;
+}
+
+input[type=radio]:checked + label{
+	background-color: rgb(135, 206, 235, 0.2);
+	border: 1px solid rgb(135, 206, 235, 0.5);
+	background-image: url('project/vybor.png');
+	background-repeat: no-repeat;
+}
+
+button {
+	width: 150px;
+	height: 40px;
+	border-radius: 50px;
+	background: green;
+	border: 0px;
+	color: white;
+}
+
+#cost span{
+	font-family: "BebasRegular";
+	font-size: 20px;
+}
+
+.block-text {
+	display: none;
+	position: relative;
+	bottom: 0px;
+	color: #87cefa;
+}
+
+#js-result{
+	color: #87cefa;
+}
+
