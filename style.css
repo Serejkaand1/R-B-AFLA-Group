@@ -1,9 +1,9 @@
 @font-face { 
     font-family: "BebasRegular";
-    src: url("project/fonts/BebasRegular/BebasRegular.eot");
-    src: url("project/fonts/BebasRegular/BebasRegular.eot?#iefix")format("embedded-opentype"),
-    url("project/fonts/BebasRegular/BebasRegular.woff") format("woff"),
-    url("project/fonts/BebasRegular/BebasRegular.ttf") format("truetype");
+    src: url("BebasRegular.eot");
+    src: url("BebasRegular.eot?#iefix")format("embedded-opentype"),
+    url("BebasRegular.woff") format("woff"),
+    url("BebasRegular.ttf") format("truetype");
     font-style: bold;
     font-weight: normal;
 }
@@ -54,7 +54,7 @@
 label{
 	position: relative;
 	padding: 8px 285px 8px 40px;
-	background-image: url('project/active.png');
+	background-image: url('active.png');
 	background-repeat: no-repeat;
 	width: 415px;
 	height: 55px;
@@ -66,14 +66,14 @@ label:hover{
 	 border: 1px solid rgb(135, 206, 235, 0.5);
 	 cursor: pointer;
 	 background: rgb(135, 206, 235, 0.2);
-	 background-image: url('project/active.png');
+	 background-image: url('active.png');
 	 background-repeat: no-repeat;
 }
 
 input[type=radio]:checked + label{
 	background-color: rgb(135, 206, 235, 0.2);
 	border: 1px solid rgb(135, 206, 235, 0.5);
-	background-image: url('project/vybor.png');
+	background-image: url('vybor.png');
 	background-repeat: no-repeat;
 }
 
